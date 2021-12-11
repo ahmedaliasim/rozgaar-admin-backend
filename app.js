@@ -23,7 +23,7 @@ require('./Complaint');
 
 
 
-const requireToken = require('./reqToken')
+const requireToken = require('./reqtoken')
 const authRoutes = require('./routes/authroutes')
 app.use(bodyParser.json())
 app.use(authRoutes)
