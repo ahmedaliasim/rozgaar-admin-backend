@@ -73,7 +73,6 @@ router.post('/signup',async (req,res)=>{
 
 
 router.post('/signin',async (req,res)=>{
-  res.set('Access-Control-Allow-Origin', '*');
     const {email,password} = req.body
     if(!email || !password){
         return res.status(422).send({error :"must provide email or password"})
